@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente, aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <!-- A tag picture possibilita que adaptemos as imagens para o tipo de dispositivo que o cliente está usando melhorando a experiência do usuário.
+    A ordem dos sources importa para a aparição no site -->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midias/happy-mistake.mp3" controls autoplay></audio>
+    <!-- Uma coisa que é possível se notar é que se não for atribuido a propriedade controls, o áudio não consegue ser reproduzido nesse site, isso pode se dar pq alguns mecanismo não são compatíveis com o mp3
+    Existem os seguintes formatos: mp3, wav e ogg-->
+
+    <p>Segunda tentativa:</p>
+    <audio preload="metadata" autoplay controls loop> <!-- o loop é justamente para ficar tocando em looping-->
+        <source src="midias/happy-mistake.mp3" type="audio/mpeg"> <!-- O type do mp3 é mpeg-->
+        <source src="midias/happy-mistake.wav" type="audio/wav">
+        <source src="midias/happy-mistake.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/happy-mistake.mp3">Clique aqui para baixar o aquivo MP3</a></p>
+    </audio>
+    <!-- Uma outra maneira de adicionar áudio ao site seria assim, onde você adiciona o source separadamente, e com todos os formatos (caso vc os tenha salvo no pc)
+    Lembrando que a tag source segue uma ordem, então de acordo com a formatação:
+     - primeiro seria testado em mp3
+     - segundo seira testado em wav
+     - terceiro seria testado em ogg-->
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(107, 103, 103);
+            margin: 3px;
+            box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.281);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 40px;
+            box-shadow: 4px 4px 9px rgba(0,0,0,0.384);
+        }
+
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside{
+            background-color: rgb(107, 103, 103);
+        }
+        footer{
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            background-color: whitesmoke;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes Política Tecnologia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur autem illum sunt porro! Accusantium repellat placeat dolore, aliquam maxime dolores ut molestiae enim ex nobis saepe modi quae error laborum!</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam dignissimos ab commodi at! Repudiandae doloribus impedit tempore perspiciatis fugit? Aliquid explicabo a id cupiditate accusantium quisquam? A, cupiditate delectus! Enim.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticias Internacionais</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit sequi incidunt, eligendi neque praesentium necessitatibus aut nemo architecto vero ea laborum tempore debitis, soluta temporibus nulla accusantium blanditiis, accusamus exercitationem?</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Video</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

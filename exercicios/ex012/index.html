@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor.</p>
+
+    <video src="video/video.mp4" width="560" controls></video>
+    <!-- Essa é a base, mas para que seja criado em diversos formatos é nesse necessa´trio  que seja aberto a guia de outra maneira-->
+
+    <p> Garantindo que o vídeo funcione independente do navegador</p>
+
+    <video controls width="560" poster="midia/poster.jpg">
+        <source src="video/video.mp4">
+        <!-- aqui viria os outros sources com seus respecitivos formatos-->
+        <p>Seu computador não tem compatibilidade com reprodução de vídeos.</p>
+        <!-- esse texto dentro do source só aparece se nenhum dos comandos anteriores for executado-->
+    </video>
+    <!-- Obs.: Quando o vídeo é hospedado localmente, o consumo de tráfego de dados é muito grande. Se tratando de um site que irá receber um alto número de acessos, fica desfavorável para o proprietário pq sai bem caro-->
+
+    <h1>Inserindo vídeos externos</h1>
+    <p>inserindo do youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QK7ue908ArE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
